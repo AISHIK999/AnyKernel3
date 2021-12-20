@@ -36,6 +36,10 @@ patch_vbmeta_flag=auto;
 set_perm_recursive 0 0 755 644 $ramdisk/*;
 set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
+## recent key fix for OSS touchscreen driver
+mount -o remount,rw /vendor;
+rm -rf /vendor/usr/keylayout/ft5x06_ts.kl;
+ln -s /vendor/usr/keylayout/ft5x06_720p.kl /vendor/usr/keylayout/ft5x06_ts.kl;
 
 ## AnyKernel boot install
 dump_boot;
