@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Project999 kernel by Aishik Mukherjee
+kernel.string=Kernel made by AISHIK999
 do.devicecheck=1
 do.modules=0
 do.systemless=1
